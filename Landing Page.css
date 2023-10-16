@@ -1,0 +1,178 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main frame */
+.main_frame {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* Navbar container */
+.nav_container {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 2rem;
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 0px 8px rgb(120, 120, 120);
+}
+
+/* Logo in the navbar */
+.logo {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    text-decoration: none;
+    justify-content: center;
+    color: orangered;
+}
+
+/* Navigation list in the navbar */
+.nav_list {
+    display: flex;
+    column-gap: 10px;
+    list-style: none;
+    margin: 0 15px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    transition: 0.7s linear;
+    font-weight: 500;
+    color: #fff;
+    font-size: 17px;
+}
+
+/* Change link color on hover */
+.nav_list > li:hover {
+    color: orangered;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.section{
+    display: flex;
+    height: 10vh;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    color: #96c7e8;
+    font-size: 7px;
+  }
+
+/* Container for the main content */
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    column-gap: 15px;
+}
+
+/* Header text */
+.header {
+    font-size: 4rem;
+    text-shadow: 0px 0px 5px rgb(59, 58, 58);
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 1rem 0px;
+}
+
+/* Image container */
+.image_container {
+    width: 250px;
+    height: 250px;
+    background: #ffffff64;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Styles for the circular background of the image */
+.image_container::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(30deg, yellow, rgb(251, 5, 128));
+    filter: blur(10px);
+    position: absolute;
+    left: -53px;
+    top: -78px;
+    z-index: -1;
+}
+
+/* More styles for the circular background of the image */
+.image_container::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(30deg, orangered, hotpink);
+    filter: blur(12px);
+    position: absolute;
+    right: -53px;
+    bottom: -78px;
+}
+
+/* Banner image */
+.banner_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: grayscale(1);
+    transition: 0.2s;
+}
+
+/* Remove grayscale filter on hover */
+.banner_image:hover {
+    filter: grayscale(0);
+    transition: 0.2s;
+}
+
+/* Content paragraph */
+.content_para {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.3rem;
+    font-weight: 700;
+    color: rgb(34, 35, 35);
+}
+
+/* Button */
+.button {
+    margin: 0 auto;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: medium;
+    text-transform: capitalize;
+    display: block;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.1s linear;
+    background-color: orangered;
+}
+
+/* Button hover effect */
+.button:hover {
+    box-shadow: 0px 0px 5px rgb(120, 119, 119);
+    transform: scale(1.1);
+    transition: 0.1s linear;
+}
