@@ -1,2 +1,0 @@
-netstat -aon | findstr :
-    taskkill /PID <PID> /F
